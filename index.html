@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="សេវាកម្មដឹកដី និងជួលឡានដឹកដី។ ទាក់ទង 012 828 695">
+<title>សេវាកម្មដឹកដី | 012 828 695</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --g: #16834b;
+  --g2: #236b43;
+  --dark: #14251b;
+  --muted: #65736a;
+  --cream: #f4f8f4;
+  --yellow: #ffd044;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Kantumruy Pro", "Battambang", sans-serif;
+  color: var(--dark);
+  line-height: 1.75;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* TOP BAR */
+.top {
+  background: #10251a;
+  color: #e8f3eb;
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+.top .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* NAVIGATION */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #ffffffed;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px #10251a12;
+}
+
+nav {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 43px;
+  height: 43px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--g), #75c78e);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 23px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.links a:hover {
+  color: var(--g);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--g);
+  color: white;
+  font-weight: 800;
+  transition: .25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px #16834b40;
+  background: #106b3c;
+}
+
+.yellow {
+  background: var(--yellow);
+  color: #17251b;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #ffffff88;
+}
+
+.menu {
+  display: none;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 9px;
+  font-size: 22px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(115deg, #102b1c, #174a2d 58%, #28794d);
+  color: white;
+  padding: 76px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ffffff25;
+  border-radius: 50%;
+  right: -120px;
+  top: -250px;
+  box-shadow: 0 0 0 45px #ffffff09,
+              0 0 0 90px #ffffff07;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 42px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffffff19;
+  border: 1px solid #ffffff40;
+  border-radius: 40px;
+  padding: 6px 13px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+h1 span {
+  color: var(--yellow);
+}
+
+.hero p {
+  color: #dfede3;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.truck {
+  background: #ffffff18;
+  border: 1px solid #ffffff40;
+  padding: 14px;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px #06180e55;
+  animation: float 5s ease-in-out infinite;
+}
+
+.truck-art {
+  height: 300px;
+  background: linear-gradient(145deg, #dcecdf, #a9c9b0);
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: clamp(110px, 18vw, 185px);
+}
+
+.truck small {
+  display: block;
+  text-align: center;
+  color: #edf8ef;
+  padding: 10px 0 0;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-12px) rotate(-1deg);
+  }
+}
+
+/* SECTION */
+section {
+  padding: 72px 0;
+}
+
+.head {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.kicker {
+  color: var(--g);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  margin: 7px 0;
+}
+
+.head p,
+.muted {
+  color: var(--muted);
+}
+
+/* SERVICES */
+.services {
+  background: var(--cream);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e3ece5;
+  border-radius: 18px;
+  padding: 25px;
+  transition: .3s;
+  box-shadow: 0 10px 30px #14251b08;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px #14251b16;
+}
+
+.icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  background: #e8f5ec;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  margin-bottom: 7px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ABOUT */
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin-top: 17px;
+  display: grid;
+  gap: 11px;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+}
+
+li b {
+  color: var(--g);
+}
+
+/* PRICE */
+.price {
+  background: #142b1e;
+  color: white;
+  padding: 28px;
+  border-radius: 22px;
+}
+
+.price p {
+  color: #d7e8dc;
+  margin: 9px 0 15px;
+}
+
+.phone {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+/* STEPS */
+.steps {
+  background: var(--cream);
+}
+
+.stepgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.step {
+  background: white;
+  border: 1px solid #e5eee7;
+  border-radius: 17px;
+  padding: 23px;
+}
+
+.num {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: var(--g);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.step p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(120deg, #143521, #1e6840);
+  color: white;
+}
+
+.contact p {
+  color: #d9e9de;
+}
+
+.contactbox {
+  padding: 25px;
+  border-radius: 20px;
+  background: #ffffff13;
+  border: 1px solid #ffffff35;
+}
+
+.contactbox div {
+  padding: 9px 0;
+}
+
+.contactbox small {
+  display: block;
+  color: #c7ddce;
+}
+
+/* FOOTER */
+footer {
+  background: #0e2117;
+  color: #d7e6dc;
+  text-align: center;
+  padding: 22px;
+  font-size: 13px;
+}
+
+/* FLOATING CALL BUTTON */
+.call {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: #17251b;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  z-index: 30;
+  box-shadow: 0 10px 30px #0004;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 0 12px #ffd04400,
+                0 10px 30px #0004;
+  }
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: .7s;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* MOBILE */
+@media(max-width:820px) {
+  .grid,
+  .two {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 18px 5%;
+    flex-direction: column;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .navcall {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:560px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .truck-art {
+    height: 220px;
+  }
+
+  .cards,
+  .stepgrid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+
+  .top .container {
+    justify-content: center;
+  }
+}
+
+/* REDUCE MOTION ACCESSIBILITY */
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top">
+  <div class="container">
+    <span>🚛 សេវាកម្មដឹកដី និងជួលឡានដឹកដី</span>
+    <span>សូមទាក់ទងសាកសួរតម្លៃ និងទីតាំងសេវា</span>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<header>
+  <nav class="container">
+
+    <a class="brand" href="#home">
+      <span class="logo">🚛</span>
+      សេវាកម្មដឹកដី
+    </a>
+
+    <button class="menu" id="menu">☰</button>
+
+    <div class="links" id="links">
+      <a href="#home">ទំព័រដើម</a>
+      <a href="#services">សេវាកម្ម</a>
+      <a href="#about">អំពីយើង</a>
+      <a href="#steps">របៀបប្រើសេវា</a>
+      <a href="#contact">ទំនាក់ទំនង</a>
+    </div>
+
+    <a class="btn navcall" href="tel:012828695">
+      📞 ហៅទូរស័ព្ទ
+    </a>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container grid">
+
+    <div class="reveal">
+      <div class="tag">
+        🚚 សេវាកម្មរហ័ស • តម្លៃសមរម្យ • ទុកចិត្តបាន
+      </div>
+
+      <h1>
+        ត្រូវការដីចាក់បំពេញ?<br>
+        <span>មានឡានដឹកដីជូនដល់ទីតាំង!</span>
+      </h1>
+
+      <p>
+        ផ្តល់សេវាកម្មដឹកដី ចាក់ដីបំពេញទីធ្លា និងជួលឡានដឹកដី
+        សម្រាប់ផ្ទះ សំណង់ ដីឡូត៍ និងគម្រោងផ្សេងៗ។
+        ទាក់ទងមកយើង ដើម្បីសាកសួរតម្លៃ និងកក់សេវា។
+      </p>
+
+      <div class="actions">
+        <a class="btn yellow" href="tel:012828695">
+          📞 ទាក់ទងឥឡូវនេះ
+        </a>
+
+        <a class="btn outline" href="#services">
+          មើលសេវាកម្ម ↓
+        </a>
+      </div>
+
+      <p style="font-size:13px;margin-top:15px">
+        លេខទំនាក់ទំនង៖ 012 828 695
+      </p>
+    </div>
+
+    <div class="truck reveal">
+      <div class="truck-art">🚛</div>
+      <small>ឡានដឹកដី • ដឹកជញ្ជូនដល់ទីតាំង</small>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="head reveal">
+      <div class="kicker">OUR SERVICES</div>
+      <h2>សេវាកម្មរបស់យើង</h2>
+      <p>
+        ជ្រើសរើសសេវាកម្មដែលអ្នកត្រូវការ
+        ហើយទាក់ទងមកយើងដើម្បីសាកសួរតម្លៃ។
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="icon">🟫</div>
+        <h3>ដឹកដីចាក់បំពេញ</h3>
+        <p>
+          ដឹកដីសម្រាប់ចាក់បំពេញដីឡូត៍ ទីធ្លាផ្ទះ
+          និងទីតាំងសំណង់ តាមតម្រូវការរបស់អតិថិជន។
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">🚛</div>
+        <h3>ជួលឡានដឹកដី</h3>
+        <p>
+          សេវាជួលឡានដឹកដី សម្រាប់ដឹកជញ្ជូនដីចេញ
+          ឬដឹកដីចូលតាមទីតាំងការងារ។
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">🏗️</div>
+        <h3>សេវាកម្មសំណង់</h3>
+        <p>
+          សេវាដឹកដីសម្រាប់ការដ្ឋានសំណង់
+          ការរៀបចំទីធ្លា និងការងារបំពេញដីផ្សេងៗ។
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container two">
+
+    <div class="reveal">
+      <div class="kicker">WHY CHOOSE US</div>
+
+      <h2>ហេតុអ្វីគួរជ្រើសរើសសេវាកម្មយើង?</h2>
+
+      <p class="muted">
+        យើងផ្តោតលើការផ្តល់សេវាដឹកជញ្ជូនងាយស្រួល
+        និងការទំនាក់ទំនងច្បាស់លាស់
+        មុនពេលចាប់ផ្តើមការងារ។
+      </p>
+
+      <ul>
+        <li><b>✓</b> ទាក់ទងសាកសួរតម្លៃបានដោយផ្ទាល់</li>
+        <li><b>✓</b> ពិភាក្សាទីតាំង និងបរិមាណដីតាមតម្រូវការ</li>
+        <li><b>✓</b> សមស្របសម្រាប់ផ្ទះ ដីឡូត៍ និងការដ្ឋានសំណង់</li>
+        <li><b>✓</b> ទំនាក់ទំនងតាមលេខទូរស័ព្ទបានងាយស្រួល</li>
+      </ul>
+    </div>
+
+    <div class="price reveal">
+      <div style="font-size:30px">📋</div>
+
+      <h2>ចង់ដឹងតម្លៃដឹកដី?</h2>
+
+      <p>
+        តម្លៃអាស្រ័យលើប្រភេទដី បរិមាណ ចម្ងាយ
+        និងទីតាំងដឹកជញ្ជូន។
+        សូមទាក់ទងមកយើង ដើម្បីបញ្ជាក់តម្លៃ។
+      </p>
+
+      <a class="phone" href="tel:012828695">
+        012 828 695
+      </a>
+
+      <br><br>
+
+      <a class="btn yellow" href="tel:012828695">
+        ☎ សាកសួរតម្លៃឥឡូវនេះ
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps" id="steps">
+  <div class="container">
+
+    <div class="head reveal">
+      <div class="kicker">HOW IT WORKS</div>
+      <h2>របៀបប្រើសេវាកម្ម</h2>
+      <p>ងាយស្រួលត្រឹមតែ ៣ ជំហាន។</p>
+    </div>
+
+    <div class="stepgrid">
+
+      <div class="step reveal">
+        <div class="num">01</div>
+        <h3>ទាក់ទងមកយើង</h3>
+        <p>
+          ទូរស័ព្ទទៅលេខ 012 828 695
+          ដើម្បីប្រាប់ពីតម្រូវការរបស់អ្នក។
+        </p>
+      </div>
+
+      <div class="step reveal">
+        <div class="num">02</div>
+        <h3>ប្រាប់ទីតាំង និងចំនួន</h3>
+        <p>
+          ប្រាប់ទីតាំងដឹកដី ប្រភេទដី និងបរិមាណដែលត្រូវការ
+          ដើម្បីសាកសួរតម្លៃ។
+        </p>
+      </div>
+
+      <div class="step reveal">
+        <div class="num">03</div>
+        <h3>បញ្ជាក់ការដឹកជញ្ជូន</h3>
+        <p>
+          ពិភាក្សាពេលវេលា និងព័ត៌មានលម្អិត
+          ជាមួយអ្នកផ្តល់សេវា។
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container two">
+
+    <div class="reveal">
+      <div class="kicker" style="color:#ffd044">
+        CONTACT US
+      </div>
+
+      <h2>ត្រៀមដឹកដីជូនអ្នកហើយ!</h2>
+
+      <p>
+        ចង់សាកសួរតម្លៃ ឬកក់ឡានដឹកដី?
+        ចុចប៊ូតុងខាងក្រោម ដើម្បីទាក់ទងមកយើងដោយផ្ទាល់។
+      </p>
+
+      <br>
+
+      <a class="btn yellow" href="tel:012828695">
+        📞 ហៅ 012 828 695
+      </a>
+    </div>
+
+    <div class="contactbox">
+
+      <div>
+        📱
+        <small>លេខទូរស័ព្ទ</small>
+        <strong style="font-size:20px">012 828 695</strong>
+      </div>
+
+      <div>
+        🚛
+        <small>សេវាកម្ម</small>
+        <strong>ដឹកដី និងជួលឡានដឹកដី</strong>
+      </div>
+
+      <div>
+        📍
+        <small>តំបន់សេវាកម្ម</small>
+        <strong>សូមទាក់ទងសាកសួរទីតាំងសេវា</strong>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  © <span id="year"></span>
+  សេវាកម្មដឹកដី និងជួលឡានដឹកដី | រក្សាសិទ្ធិគ្រប់យ៉ាង
+</footer>
+
+<!-- FLOATING CALL -->
+<a class="call" href="tel:012828695" aria-label="Call">
+  ☎
+</a>
+
+<script>
+const menu = document.getElementById('menu');
+const links = document.getElementById('links');
+
+menu.addEventListener('click', () => {
+  links.classList.toggle('open');
+});
+
+links.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    links.classList.remove('open');
+  });
+});
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+/* SCROLL REVEAL */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('show');
+      io.unobserve(e.target);
+    }
+  });
+}, {
+  threshold: .12
+});
+
+document.querySelectorAll('.reveal').forEach(el => {
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
